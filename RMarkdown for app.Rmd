@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 #### Shiny()-This package allows R to build interactive applications. The pre-built widgets, the reactive input, output functions allow for nice, responsive, interactive tables, maps, graphs. etc. The ui.R and the server.R markdowns are key to get this application up and running. In this project we rendered a plot, and used the brush function to allow the user to brush over points of interest in the beaver plot. The user can get details about the slope and intercept of the data when brushing over a range of points.
 
 #### For more information:  http://shiny.rstudio.com
-#### The source for the application is poste
+#### The source for the application is posted on https://github.com/ChristopherPapanicolas87/DataProductsSimpleApp
 
 ## The data 
 #### Default data loaded from the package beaver1
