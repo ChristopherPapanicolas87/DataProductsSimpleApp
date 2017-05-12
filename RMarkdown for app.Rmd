@@ -1,0 +1,41 @@
+---
+title: "Beaver Tempurature Dynamics"
+author: "Chris"
+date: "May 12, 2017"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction 
+- Reynolds (1994) describes a small part of a study of the long-term temperature dynamics of beaver Castor canadensis in north-central Wisconsin. Body temperature was measured by telemetry every 10 minutes for four females, but data from a one period of less than a day for each of two animals is used there. I produiced an application that renders a plot of Time vs. Temperature.  In the application, one can select a range of points from the data and observe the slope and the intercept for that range for that data. The slope and intercept whill change depending on the range of data selected in the interface. 
+
+## Rational
+#### This application was built to for the coursera Data Products course peer reviewed assignment. 
+#### The projects ensured the comprhension of the: 
+1. shiny package 
+2. THe use of slidy to produce power rpoint presentations 
+
+## The Pakcages 
+#### Shiny()-This package allows R to build interactive applications. The pre-built widgets, the reactive input, output functions allow for nice, responsive, interactive tables, maps, graphs. etc. The ui.R and the server.R markdowns are key to get this application up and running. In this project we rendered a plot, and used the brush function to allow the user to brush over points of interest in the beaver plot. The user can get details about the slope and intercept of the data when brushing over a range of points.
+
+#### For more information:  http://shiny.rstudio.com
+#### The source for the application is poste
+
+## The data 
+#### Default data loaded from the package beaver1
+```{r cars, echo = TRUE}
+summary(beaver1)
+f <- beaver1[,c("time", "temp")]
+head(f)
+```
+
+## The Application 
+#### The application "Time vs. Temp" is an application built with shiny to show the correlation between beaver time and beaver temperature. The application was built to understand the concepts of shiny and its functionalities. The data is can be loaded as a package library(beaver1). 
+
+### The aapplication is used to assess the slope and intercept when looking at beaver time and temperature. The user can brush over with the mouse a select range of data points. On the side panel, the user will be able to observe a slope and intercept for the range of data points brushed over by the user. 
+
+-Application is deployed on https://cpapanicolas.shinyapps.io/dataproductfinalproject/
+
