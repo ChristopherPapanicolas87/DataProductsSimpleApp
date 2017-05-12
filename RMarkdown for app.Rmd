@@ -38,4 +38,5 @@ head(f)
 ### The aapplication is used to assess the slope and intercept when looking at beaver time and temperature. The user can brush over with the mouse a select range of data points. On the side panel, the user will be able to observe a slope and intercept for the range of data points brushed over by the user. 
 
 -Application is deployed on https://cpapanicolas.shinyapps.io/dataproductfinalproject/
+-Presentation link is published on http://rpubs.com/cpapanic/beaverapp
 
